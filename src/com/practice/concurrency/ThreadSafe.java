@@ -1,4 +1,4 @@
-package com.company;
+package com.practice.concurrency;
 
 import java.util.Collections;
 import java.util.Set;

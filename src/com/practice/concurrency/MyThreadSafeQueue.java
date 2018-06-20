@@ -1,4 +1,4 @@
-package com.company;
+package com.practice.concurrency;
 
 import java.util.Set;
 import java.util.TreeSet;
@@ -17,9 +17,13 @@ class Solution {
         es.submit(new PutThread(myThreadSafeQueue, 2, 0));
         es.submit(new PutThread(myThreadSafeQueue, 3, 0));
         es.submit(new PutThread(myThreadSafeQueue, 4, 0));
+        Thread.sleep(5000);
         es.submit(new GetThread(myThreadSafeQueue));
+        Thread.sleep(1000);
         es.submit(new GetThread(myThreadSafeQueue));
+        Thread.sleep(1000);
         es.submit(new GetThread(myThreadSafeQueue));
+        Thread.sleep(1000);
 
         es.submit(new GetThread(myThreadSafeQueue));
         es.submit(new GetThread(myThreadSafeQueue));

@@ -1,4 +1,4 @@
-package com.company;
+package com.practice.streaming;
 
 import java.util.*;
 import java.util.stream.*;

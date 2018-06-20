@@ -1,3 +1,4 @@
+package com.practice.streaming;
 
 import java.util.function.IntConsumer;
 import java.util.stream.IntStream;
